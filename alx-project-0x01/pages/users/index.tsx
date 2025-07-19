@@ -18,7 +18,7 @@ const Users: React.FC<UserListProps> =({users})=>{
    const formClose = () =>{setOpenForm(false)};
 
     const handleAddUser = (newUser:UserData) =>{
-      const userID = addedUser.length+1;
+      const userID = Date.now();
       setAddedUser([{...newUser, id:userID}, ...addedUser])
       setOpenForm(false); }
     
