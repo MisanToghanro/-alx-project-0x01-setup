@@ -1,9 +1,10 @@
 
 export interface PostProps{
     userId: number,
-    id:number,
-    title:string,
-    body:string
+    title: string,
+    body: string
+    id: number,
+
 
 }
 
@@ -13,13 +14,13 @@ export interface PostPageProps{
 
 
  export interface UserProps{
-    id:number;
-    name:string;
-    username:string;
-    email:string;
+    id: number;
+    name: string;
+    username: string;
+    email: string;
 
     address:{
-     street:string;
+     street: string;
     suite:string;
     city:string;
     zipcode:string;
@@ -33,7 +34,7 @@ export interface PostPageProps{
     website:string;
     company:{
      name:string;
-    catchPhrase:string;
+    catchPhrase: string;
     bs:string;
     }
 
@@ -44,15 +45,16 @@ export interface UserListProps{
 }
 
 export interface PostData{
-    userId:number;
-    id?:number;
-    title:string;
-    body:string;
+    userId: number;
+    title: string;
+    body: string;
+    id?: number;
+
 }
 
 export interface PostModalProps{
     onClose:()=>void;
-    onSubmit:(post:PostData) =>void;
+    onSubmit: (post: PostData) => void;
 }
 export interface UserData{
     id:number;
@@ -82,5 +84,5 @@ export interface UserData{
 
 export interface UserModalProps{
     onClose: () => void;
-    onSubmit:(user:UserData) => void;
+    onSubmit:(post: UserData) => void;
 }

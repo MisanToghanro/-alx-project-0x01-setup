@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 
 
-const Header: React.FC = () =>{
+const Header: React.FC = () => {
 
 
     return(

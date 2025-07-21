@@ -13,7 +13,7 @@ const PostCard: React.FC<PostProps> = ({userId,id,title,body}) =>{
             <p className="text-gray-600 ">{body}</p>
             <div className="mt-4 flex items-center justify-between text-sm text-gray-500">
               <span>
-                User ID : {userId}
+                User ID: {userId}
               </span>
               <span>
                 Post ID: {id}

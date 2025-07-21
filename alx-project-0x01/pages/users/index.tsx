@@ -65,4 +65,4 @@ const Users: React.FC<UserListProps> =({users})=>{
   }
 }
 
-export default Users
+export default Users;
